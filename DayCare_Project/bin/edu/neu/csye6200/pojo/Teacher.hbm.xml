@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 27, 2019 12:30:42 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <joined-subclass name="edu.neu.csye6200.pojo.Teacher" extends="edu.neu.csye6200.pojo.Person" table="TEACHER" lazy="false">
+        <key>
+            <column name="ID" />
+        </key>
+        <property name="id" type="java.lang.Long">
+            <column name="ID" />
+        </property>
+    </joined-subclass>
+</hibernate-mapping>
